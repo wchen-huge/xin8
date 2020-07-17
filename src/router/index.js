@@ -12,10 +12,14 @@ import Department from '../components/system/Department'
 import Login from '../components/Login'
 import FlowTrack from '../components/menuInfo/FlowTrack'
 import Allocation from '../components/menuInfo/Allocation'
-import Application from '../components/system/Application'
-import Donate from '../components/system/Donate'
-import Infomation from '../components/system/Infomation'
-import Scrap from '../components/system/Scrap'
+import Application from '../components/songbin/Application'
+import Donate from '../components/songbin/Donate'
+import Infomation from '../components/songbin/Infomation'
+import Scrap from '../components/songbin/Scrap'
+import MateCategorys from '../components/wupli/MateCategorys'
+import OutStocks from '../components/wupli/OutStocks'
+import Products from '../components/wupli/Products'
+import PurInfo from '../components/wupli/PurInfo'
 Vue.use(VueRouter)
 
 const routes = [
@@ -44,8 +48,12 @@ const routes = [
       { path: '/allocation', component: Allocation },
       { path: '/application', component: Application },
       { path: '/donate', component: Donate },
-      { path: '/infomation', component: Infomation },
       { path: '/scrap', component: Scrap },
+      { path: '/infomation', component: Infomation },
+      { path: '/mateCategorys', component: MateCategorys },
+      { path: '/outStocks', component: OutStocks },
+      { path: '/products', component: Products },
+      { path: '/purInfo', component: PurInfo },
       { path: '/flowTrack', component: FlowTrack }]
   }
 ]
