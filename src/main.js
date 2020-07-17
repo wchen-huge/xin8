@@ -3,12 +3,13 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './plugins/element.js'
+import echarts from 'echarts'
 import './assets/css/global.css'
 import NProgress from 'nprogress' // 引入nprogress插件
 import 'nprogress/nprogress.css' // 这个nprogress样式必须引入
 import axios from 'axios'
 import { hasPermission } from './utils/permissionDirect'
-
+Vue.prototype.$echarts = echarts
 const Plugins = [hasPermission]
 Plugins.map((plugin) => {
   Vue.use(plugin)
