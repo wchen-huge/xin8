@@ -9,7 +9,7 @@
       </div>
       <el-dropdown>
         <div class="block">
-          <el-avatar :size="50" :src="this.userInfo.avatar" style="cursor: pointer;"></el-avatar>
+          <el-avatar id="clock" :size="50" :src="this.userInfo.avatar" style="cursor: pointer;"></el-avatar>
         </div>
         <el-dropdown-menu slot="dropdown" trigger="click">
           <el-dropdown-item>
@@ -190,6 +190,10 @@ export default {
   /*去除二级菜单突出区域*/
   .el-menu {
     border-right: 0;
+  }
+  #clock {
+    background-image: url("../assets/tolels.jpg");
+    background-size: contain;
   }
 
 </style>
