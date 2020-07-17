@@ -10,10 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33f5f631-45b3-415d-a96f-c783de0d6c15" name="Default Changelist" comment="王晨提交login登录框">
-      <change afterPath="$PROJECT_DIR$/src/assets/tolels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.vue" afterDir="false" />
+    <list default="true" id="33f5f631-45b3-415d-a96f-c783de0d6c15" name="Default Changelist" comment="王晨提交《宋斌》">
+      <change beforePath="$PROJECT_DIR$/src/components/songbin/Infomation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/songbin/Infomation.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,26 +309,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="636" y="230" width="256" height="297" key="Github.ShareDialog/0.0.1366.738@0.0.1366.738" timestamp="1594956975632" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1594972070989">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1395" height="242" key="GridCell.Tab.0.bottom" timestamp="1594972907945">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state width="1322" height="197" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593855446983" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1594972070989" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1594972070988">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1395" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1594972907945" />
+    <state width="1395" height="242" key="GridCell.Tab.0.center" timestamp="1594972907945">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state width="1322" height="197" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593855446983" />
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1594972070988" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1594972070988">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1395" height="242" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1594972907945" />
+    <state width="1395" height="242" key="GridCell.Tab.0.left" timestamp="1594972907945">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state width="1322" height="197" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593855446983" />
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1594972070988" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1594972070988">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1395" height="242" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1594972907945" />
+    <state width="1395" height="242" key="GridCell.Tab.0.right" timestamp="1594972907945">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state width="1322" height="197" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593855446983" />
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1594972070988" />
+    <state width="1395" height="242" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1594972907945" />
     <state x="263" y="103" key="IDE.errors.dialog" timestamp="1594776552226">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

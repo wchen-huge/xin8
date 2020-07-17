@@ -18,12 +18,8 @@
           <el-table-column prop="quantity" label="数量" width="90"></el-table-column>
           <el-table-column prop="purContent" label="采购说明" width="90"></el-table-column>
           <el-table-column prop="supplier" label="供应商" width="90"></el-table-column>
-          <el-table-column prop="conPerson" label="联系人" width="90"></el-table-column>
-          <el-table-column prop="phone" label="电话" width="115"></el-table-column>
           <el-table-column prop="data" label="申请日期" width="115"></el-table-column>
           <el-table-column prop="status" label="审批状态" width="90"><el-tag>已完成</el-tag></el-table-column>
-          <el-table-column prop="buyer" label="采购员" width="90"></el-table-column>
-          <el-table-column prop="remarks" label="备注" width="90"></el-table-column>
           <el-table-column prop="classification" label="分类">
           </el-table-column>
           <el-table-column fixed="right" label="操作" width="250">
@@ -51,11 +47,11 @@ export default {
   },
   methods: {
     async getInformationList () {
-      const { data: res } = await this.$http.get('sys/information')
+      const { data: res } = await this.$http.get('sys/information', { params: this.queryInfo })
       if (res.code !== 200) {
         return this.$message.error(res.msg)
       }
-      this.InformationList = res.data.list
+      this.InformationList = res.data.result
       this.total = res.data.total
     },
     delInformationId (id) {
