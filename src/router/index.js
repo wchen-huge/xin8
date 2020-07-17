@@ -1,22 +1,44 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-
+import Home from '../components/Home'
+import Users from '../components/system/Users'
+import Welcome from '../components/Welcome'
+import Roles from '../components/system/Roles'
+import Alarm from '../components/menuInfo/Alarm'
+import Approve from '../components/menuInfo/Approve'
+import Placard from '../components/menuInfo/Placard'
+import Urge from '../components/menuInfo/Urge'
+import Department from '../components/system/Department'
+import Login from '../components/Login'
+import FlowTrack from '../components/menuInfo/FlowTrack'
+import Allocation from '../components/menuInfo/Allocation'
 Vue.use(VueRouter)
 
 const routes = [
+  /* 重定向路由 */
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    redirect: '/login'
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/login',
+    component: Login
+  },
+  {
+    path: '/home',
+    name: 'Home',
+    component: Home,
+    redirect: '/welcome',
+    children: [{ path: '/welcome', component: Welcome },
+      { path: '/roles', component: Roles },
+      { path: '/users', component: Users },
+      { path: '/department', component: Department },
+      { path: '/approve', component: Approve },
+      { path: '/placard', component: Placard },
+      { path: '/urge', component: Urge },
+      { path: '/alarm', component: Alarm },
+      { path: '/allocation', component: Allocation },
+      { path: '/flowTrack', component: FlowTrack }]
   }
 ]
 
