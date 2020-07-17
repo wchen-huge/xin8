@@ -167,7 +167,7 @@ export default {
 
 .login-page {
   position: relative;
-  width: 450px;
+  width: 500px;
   background-color: #fff;
   border-radius: 5px;
   left: 50%;

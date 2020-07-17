@@ -10,17 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33f5f631-45b3-415d-a96f-c783de0d6c15" name="Default Changelist" comment="王晨提交《宋斌》">
-      <change afterPath="$PROJECT_DIR$/src/components/wupli/MateCategorys.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/wupli/OutStocks.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/wupli/Products.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/wupli/PurInfo.vue" afterDir="false" />
+    <list default="true" id="33f5f631-45b3-415d-a96f-c783de0d6c15" name="Default Changelist" comment="王晨提交《宋斌/吴鹏力》">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/system/Application.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/songbin/Application.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/system/Donate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/songbin/Donate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/system/Infomation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/songbin/Infomation.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/system/Scrap.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/songbin/Scrap.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +144,7 @@
       <workItem from="1594956956886" duration="431000" />
       <workItem from="1594958075009" duration="654000" />
       <workItem from="1594959531767" duration="1145000" />
-      <workItem from="1594961114868" duration="1257000" />
+      <workItem from="1594961114868" duration="4244000" />
     </task>
     <task id="LOCAL-00001" summary="122">
       <created>1594951455273</created>
@@ -182,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594964385002</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="王晨提交《宋斌/吴鹏力》">
+      <created>1594964716072</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594964716072</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +263,8 @@
     <MESSAGE value="122" />
     <MESSAGE value="王晨提交" />
     <MESSAGE value="王晨提交《宋斌》" />
-    <option name="LAST_COMMIT_MESSAGE" value="王晨提交《宋斌》" />
+    <MESSAGE value="王晨提交《宋斌/吴鹏力》" />
+    <option name="LAST_COMMIT_MESSAGE" value="王晨提交《宋斌/吴鹏力》" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="259" key="#ESLint" timestamp="1594283726358">
@@ -338,10 +338,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="534" y="65" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1594949073775" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1594964389860">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1594964721390">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1594964389860" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1594964721390" />
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594949188143">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
