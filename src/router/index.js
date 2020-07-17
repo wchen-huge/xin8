@@ -12,6 +12,10 @@ import Department from '../components/system/Department'
 import Login from '../components/Login'
 import FlowTrack from '../components/menuInfo/FlowTrack'
 import Allocation from '../components/menuInfo/Allocation'
+import Application from '../components/system/Application'
+import Donate from '../components/system/Donate'
+import Infomation from '../components/system/Infomation'
+import Scrap from '../components/system/Scrap'
 Vue.use(VueRouter)
 
 const routes = [
@@ -38,6 +42,10 @@ const routes = [
       { path: '/urge', component: Urge },
       { path: '/alarm', component: Alarm },
       { path: '/allocation', component: Allocation },
+      { path: '/application', component: Application },
+      { path: '/donate', component: Donate },
+      { path: '/infomation', component: Infomation },
+      { path: '/scrap', component: Scrap },
       { path: '/flowTrack', component: FlowTrack }]
   }
 ]

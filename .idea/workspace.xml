@@ -10,7 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33f5f631-45b3-415d-a96f-c783de0d6c15" name="Default Changelist" comment="122" />
+    <list default="true" id="33f5f631-45b3-415d-a96f-c783de0d6c15" name="Default Changelist" comment="王晨提交">
+      <change afterPath="$PROJECT_DIR$/src/components/system/Application.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/system/Donate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/system/Infomation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/system/Scrap.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +31,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -43,11 +50,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/system" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -66,11 +72,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xin8\xin8\src\components\system" />
       <recent name="E:\xin8\xin8\src\components" />
       <recent name="E:\xin8\xin8\src\assets" />
       <recent name="E:\xin8\xin8\src\utils" />
       <recent name="E:\xin8\xin8\src\components\menuInfo" />
-      <recent name="E:\xin8(2)\xin8\src\components\system" />
     </key>
   </component>
   <component name="RunManager">
@@ -136,6 +142,10 @@
       <workItem from="1594879903479" duration="5587000" />
       <workItem from="1594948601268" duration="3928000" />
       <workItem from="1594954583276" duration="2335000" />
+      <workItem from="1594956956886" duration="431000" />
+      <workItem from="1594958075009" duration="654000" />
+      <workItem from="1594959531767" duration="1145000" />
+      <workItem from="1594961114868" duration="922000" />
     </task>
     <task id="LOCAL-00001" summary="122">
       <created>1594951455273</created>
@@ -151,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594956703011</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="王晨提交">
+      <created>1594957131119</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594957131119</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +248,8 @@
     </ignored-roots>
     <MESSAGE value="132" />
     <MESSAGE value="122" />
-    <option name="LAST_COMMIT_MESSAGE" value="122" />
+    <MESSAGE value="王晨提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="王晨提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="259" key="#ESLint" timestamp="1594283726358">
@@ -252,19 +270,23 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1594950146455" />
-    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1594956673809">
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1594957341473">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1594957341473" />
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1594960386038">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593848881568" />
-    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1594956673809" />
-    <state x="494" y="288" key="Github.CreateGistDialog" timestamp="1594956549875">
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1594960386038" />
+    <state x="494" y="288" key="Github.CreateGistDialog" timestamp="1594957103562">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="494" y="288" key="Github.CreateGistDialog/0.0.1366.738@0.0.1366.738" timestamp="1594956549875" />
-    <state x="723" y="246" width="256" height="297" key="Github.ShareDialog" timestamp="1594956939859">
+    <state x="494" y="288" key="Github.CreateGistDialog/0.0.1366.738@0.0.1366.738" timestamp="1594957103562" />
+    <state x="636" y="230" width="256" height="297" key="Github.ShareDialog" timestamp="1594956975632">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="723" y="246" width="256" height="297" key="Github.ShareDialog/0.0.1366.738@0.0.1366.738" timestamp="1594956939859" />
+    <state x="636" y="230" width="256" height="297" key="Github.ShareDialog/0.0.1366.738@0.0.1366.738" timestamp="1594956975632" />
     <state width="1323" height="145" key="GridCell.Tab.0.bottom" timestamp="1594893649142">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -289,10 +311,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="263" y="103" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1594776552226" />
-    <state x="537" y="70" key="RollbackChangesDialog" timestamp="1594306877205">
+    <state x="537" y="70" key="RollbackChangesDialog" timestamp="1594957083141">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="537" y="70" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1594306877205" />
+    <state x="537" y="70" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1594957083141" />
     <state x="246" y="27" key="SettingsEditor" timestamp="1594956849237">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -301,10 +323,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="534" y="65" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1594949073775" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1594956720292">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1594957139351">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1594956720292" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1594957139351" />
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594949188143">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
