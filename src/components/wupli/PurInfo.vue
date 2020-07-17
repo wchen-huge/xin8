@@ -89,13 +89,16 @@
             <el-input v-model="addForm.phone"></el-input>
           </el-form-item>
           <el-form-item label="申请日期" prop="data">
-            <el-input v-model="addForm.data"></el-input>
+            <el-date-picker v-model="addForm.data" type="date" placeholder="选择日期"></el-date-picker>
           </el-form-item>
           <el-form-item label="审批状态" prop="status">
             <el-input v-model="addForm.status"></el-input>
           </el-form-item>
           <el-form-item label="采购员" prop="buyer">
             <el-input v-model="addForm.buyer"></el-input>
+          </el-form-item>
+          <el-form-item label="备注" prop="remarks">
+            <el-input v-model="addForm.remarks"></el-input>
           </el-form-item>
           <el-form-item label="分类" prop="classification">
             <el-input v-model="addForm.classification"></el-input>
@@ -173,10 +176,7 @@ export default {
       this.getpurList = res.data.result
     },
     clearTime () {
-      this.queryMap = { pageNum: 1, pageSize: 5, status: 0 }
-      this.queryMap.startTime = null
-      this.queryMap.endTime = null
-      this.range = []
+      location.reload()
     },
     /**
      * 查询入库单
@@ -201,7 +201,17 @@ export default {
         purNumber: '',
         supName: '',
         speModel: '',
-        unit: ''
+        unit: '',
+        quantity: '',
+        purContent: '',
+        supplier: '',
+        conPerson: '',
+        phone: '',
+        data: '',
+        status: '',
+        buyer: '',
+        remarks: '',
+        classification: ''
       },
       rulesAdd: {
         purNumber: [
