@@ -39,6 +39,12 @@
           <el-form-item label="分类名称" prop="supName">
             <el-input v-model="addForm.supName"></el-input>
           </el-form-item>
+          <el-form-item label="创建时间" prop="createTime">
+            <el-date-picker v-model="addForm.createTime" type="date" placeholder="选择日期"></el-date-picker>
+          </el-form-item>
+          <el-form-item label="修改时间" prop="modifiedTime">
+            <el-date-picker v-model="addForm.modifiedTime" type="date" placeholder="选择日期"></el-date-picker>
+          </el-form-item>
         </el-form>
         <span slot="footer" class="dialog-footer">
     <el-button @click="addDialogVisible = false">取 消</el-button>
@@ -66,7 +72,7 @@ export default {
     this.getsortList()
   },
   methods: {
-    editUser () {
+    async editUser () {
       this.$refs.ruleFormEdit.validate(async (valid) => {
         if (valid === true) {
           const { data: res } = await this.$http.put('wpl/mate', this.editForm)
@@ -79,7 +85,7 @@ export default {
         }
       })
     },
-    addMate () {
+    async addMate () {
       this.$refs.ruleFormAdd.validate(async (valid) => {
         if (valid === true) {
           const { data: res } = await this.$http.post('wpl/mate', this.addForm)
@@ -93,7 +99,7 @@ export default {
         }
       })
     },
-    delUserById (id) {
+    async delUserById (id) {
       this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
