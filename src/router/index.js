@@ -20,6 +20,7 @@ import MateCategorys from '../components/wupli/MateCategorys'
 import OutStocks from '../components/wupli/OutStocks'
 import Products from '../components/wupli/Products'
 import PurInfo from '../components/wupli/PurInfo'
+
 Vue.use(VueRouter)
 
 const routes = [

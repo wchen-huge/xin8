@@ -23,11 +23,7 @@
         <el-table-column prop="sendtime" label="发送时间" width="180">
         </el-table-column>
         <el-table-column prop="sendtime" label="发送状态">
-          <el-steps :space="100" :active="1" finish-status="success">
-            <el-step title="已确认"></el-step>
-            <el-step title="进行中"></el-step>
-            <el-step title="完成"></el-step>
-          </el-steps>
+          <el-progress :percentage="59" :format="format"></el-progress>
         </el-table-column>
       </el-table>
     </el-card>
@@ -47,6 +43,9 @@ export default {
     this.getMsgData()
   },
   methods: {
+    format (percentage) {
+      return percentage === 100 ? '成功' : `${percentage}%`
+    },
     async getMsgData () {
       const { data: res } = await this.$http.get('sys/msg')
       if (res.code !== 200) {
