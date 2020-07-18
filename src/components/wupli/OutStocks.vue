@@ -9,13 +9,13 @@
       </el-breadcrumb>
         <!-- 卡片部分-->
         <el-card>
-          <el-row :gutter="20">
+         <!-- <el-row :gutter="20">
             <el-col :span="8">
               <el-input placeholder="请输入出库单号" v-model="queryInfo.outNumber">
                 <el-button slot="append" icon="el-icon-search" @click="getstoList"></el-button>
               </el-input>
             </el-col>
-          </el-row>
+          </el-row>-->
         <!--搜索部分-->
             <el-form :inline="true" :model="queryMap" class="demo-form-inline">
                 <el-form-item label="发放单号">
