@@ -44,8 +44,7 @@
           stripe
           :data="supplierData"
           style="width: 100%;"
-          height="460"
-        >
+          height="460">
         <el-table-column prop="id" type="index" label="ID" width="50"></el-table-column>
 
           <el-table-column label="物资提供方地址">

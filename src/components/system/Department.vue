@@ -45,17 +45,9 @@
             height="460"
           >
             <el-table-column prop="id" type="index" label="ID" width="50"></el-table-column>
-            <el-table-column prop="phone" label="办公电话" width="180"></el-table-column>
+            <el-table-column prop="phone" label="办公电话" width="120"></el-table-column>
             <el-table-column prop="name" label="部门名" width="120"></el-table-column>
-            <el-table-column prop="total" label="人数" sortable width="100">
-              <template slot-scope="scope">
-                <el-tag effect="plain" v-text="scope.row.total+'人'" size="mini">
-                </el-tag>
-              </template>
-            </el-table-column>
-            <el-table-column prop="createTime" label="创建时间" sortable></el-table-column>
-            <el-table-column prop="modifiedTime" label="修改时间" sortable></el-table-column>
-            <el-table-column prop="mgrName" label="部门主任" width="140"></el-table-column>
+            <el-table-column prop="ctime" label="创建时间" sortable></el-table-column>
             <el-table-column prop="address" label="地址"></el-table-column>
             <el-table-column label="操作">
               <template slot-scope="scope">
@@ -90,38 +82,6 @@
           layout="total, sizes, prev, pager, next, jumper"
           :total="total"
         ></el-pagination>
-
-        <!-- 部门别添加弹出框 -->
-        <el-dialog @open="getDeanList" title="添加部门" :visible.sync="addDialogVisible" width="50%" @close="closeAddDialog">
-        <span>
-          <el-form
-            :model="addRuleForm"
-            :rules="addRules"
-            ref="addRuleFormRef"
-            label-width="100px"
-            class="demo-ruleForm"
-          >
-            <el-form-item label="部门名称" prop="name">
-              <el-input v-model="addRuleForm.name"></el-input>
-            </el-form-item>
-            <el-form-item label="部门主任" prop="mgrId">
-              <el-select v-model="addRuleForm.mgrId" placeholder="请选择部门主任">
-                <el-option v-for="dean in deans" :key="dean.id" :label="dean.name" :value="dean.id"></el-option>
-              </el-select>
-            </el-form-item>
-            <el-form-item label="办公电话" prop="phone">
-              <el-input v-model="addRuleForm.phone"></el-input>
-            </el-form-item>
-            <el-form-item label="办公地址" prop="address">
-              <el-input type="textarea" v-model="addRuleForm.address"></el-input>
-            </el-form-item>
-          </el-form>
-        </span>
-          <span slot="footer" class="dialog-footer">
-          <el-button @click="addDialogVisible = false">取 消</el-button>
-          <el-button type="primary" @click="add" :disabled="btnDisabled" :loading="btnLoading">确 定</el-button>
-        </span>
-        </el-dialog>
 
         <!-- 部门别编辑弹出框 -->
         <el-dialog
@@ -249,31 +209,20 @@ export default {
       } // 添加验证
     }
   },
+  mounted () {
+    this.downExcel()
+  },
   methods: {
     /**
      * 加载部门表格
      */ async downExcel () {
-      // eslint-disable-next-line no-unused-vars
-      const { data: res } = await this.$http.get({
-        url: '/department/excel',
-        method: 'post',
-        responseType: 'blob'
-      })
-        .then(res => {
-          if (res.headers['content-type'] === 'application/json') {
-            return this.$message.error(
-              'Subject does not have permission [department:export]'
-            )
-          }
-          const data = res.data
-          const url = window.URL.createObjectURL(data) // 将二进制文件转化为可访问的url
-          var a = document.createElement('a')
-          document.body.appendChild(a)
-          a.href = url
-          a.download = '部门列表.xls'
-          a.click()
-          window.URL.revokeObjectURL(url)
-        })
+      const { data: res } = await this.$http.get('department/excel')
+      if (res.code !== 200) {
+        return this.$message.error(res.msg)
+      }
+      this.departmentData = res.data
+      // console.log(this.downExcel())
+      console.log(res.data)
     },
     /**
      * 搜索部门
