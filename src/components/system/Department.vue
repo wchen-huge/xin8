@@ -35,7 +35,6 @@
           </el-col>
         </el-row>
         <!-- 表格区域 -->
-        <template>
           <el-table border stripe :data="departmentData" style="width: 100%;margin-top:20px;" height="460">
             <el-table-column prop="id" type="index" label="ID" width="50"></el-table-column>
             <el-table-column prop="phone" label="办公电话" width="120"></el-table-column>
@@ -60,7 +59,6 @@
               </template>
             </el-table-column>
           </el-table>
-        </template>
         <!-- 分页 -->
         <el-pagination
           style="margin-top:10px;"
