@@ -2,7 +2,7 @@
 <div>
   <el-breadcrumb separator="/">
     <el-breadcrumb-item :to="{ path:'/welcome'}">首页</el-breadcrumb-item>
-    <el-breadcrumb-item>系统管理</el-breadcrumb-item>
+    <el-breadcrumb-item>采购管理</el-breadcrumb-item>
     <el-breadcrumb-item>采购申请</el-breadcrumb-item>
   </el-breadcrumb>
   <el-radio-group v-model="labelPosition" size="small">

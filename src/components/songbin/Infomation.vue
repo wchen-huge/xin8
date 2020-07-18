@@ -2,7 +2,7 @@
       <div>
         <el-breadcrumb separator="/">
           <el-breadcrumb-item :to="{ path:'/welcome'}">首页</el-breadcrumb-item>
-          <el-breadcrumb-item>系统管理</el-breadcrumb-item>
+          <el-breadcrumb-item>采购管理</el-breadcrumb-item>
           <el-breadcrumb-item>采购信息管理</el-breadcrumb-item>
         </el-breadcrumb>
         <el-col :span="8">
@@ -25,8 +25,7 @@
           <el-table-column fixed="right" label="操作" width="250">
             <template slot-scope="scope">
               <el-button @click="JumpApplication(scope.row)" type="primary" size="small" >加购</el-button>
-              <el-button type="danger" size="small"  @click=" delInformationId (scope.row.id)">删除</el-button>
-              <el-button type="warning" size="small" @click="donation(scope.row.id)">查看捐赠</el-button>
+              <el-button type="success" size="small" @click="donation(scope.row.id)">查看捐赠</el-button>
             </template>
           </el-table-column>
         </el-table>
@@ -53,28 +52,6 @@ export default {
       }
       this.InformationList = res.data.result
       this.total = res.data.total
-    },
-    delInformationId (id) {
-      this.$confirm('确认删除此信息？ 是否继续?', '提示', {
-        confirmButtonText: '确定',
-        cancelButtonText: '取消',
-        type: 'warning'
-      }).then(async () => {
-        const { data: res } = await this.$http.delete('sys/information/' + id)
-        if (res.code !== 200) {
-          return this.$message.error(res.msg)
-        }
-        await this.getInformationList()
-        this.$message({
-          type: 'success',
-          message: '删除成功!'
-        })
-      }).catch(() => {
-        this.$message({
-          type: 'info',
-          message: '已取消删除'
-        })
-      })
     },
     JumpApplication () {
       this.$router.push({ path: 'application' })

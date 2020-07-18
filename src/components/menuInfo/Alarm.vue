@@ -21,8 +21,8 @@ center" prop="receiver" label="接收人" width="80">
         <el-table-column align="center" prop="sendtime" label="发送时间" width="160">
         </el-table-column>
         <el-table-column align="center" prop="status" label="发送状态" width="80">
-          <el-switch v-model="valueOff" active-color="#13ce66" inactive-color="#ff4949">
-          </el-switch>
+            <el-switch v-model="value" active-color="#13ce66" inactive-color="#ff4949" @click="sta">
+            </el-switch>
         </el-table-column>
         <el-table-column align="center" prop="frequency" label="发送次数" width="155">
           <el-input-number size="small" v-model="num" @change="handleChange" :min="1" :max="10"></el-input-number>
@@ -75,17 +75,20 @@ export default {
   data () {
     return {
       num: 1,
-      valueOff: true,
       msgList: [],
       msgFormVisible: false,
       msgForm: {},
-      formLabelWidth: '100px'
+      formLabelWidth: '100px',
+      value: true
     }
   },
   mounted () {
     this.getMsgData()
   },
   methods: {
+    sta () {
+      this.value = !this.value
+    },
     handleChange (value) {
       // console.log(value)
     },

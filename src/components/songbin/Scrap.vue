@@ -2,8 +2,7 @@
   <div>
     <el-breadcrumb separator="/">
       <el-breadcrumb-item :to="{ path:'/welcome'}">首页</el-breadcrumb-item>
-      <el-breadcrumb-item>系统管理</el-breadcrumb-item>
-      <el-breadcrumb-item>报废管理</el-breadcrumb-item>
+      <el-breadcrumb-item >报废管理</el-breadcrumb-item>
     </el-breadcrumb>
     <el-table stripe :data="scrapList" style="width: 100%">
       <el-table-column prop="supName" label="物资名称" width="180"></el-table-column>

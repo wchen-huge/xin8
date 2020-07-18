@@ -2,7 +2,7 @@
   <div>
     <el-breadcrumb separator="/">
       <el-breadcrumb-item :to="{ path:'/welcome'}">首页</el-breadcrumb-item>
-      <el-breadcrumb-item>系统管理</el-breadcrumb-item>
+      <el-breadcrumb-item>采购管理</el-breadcrumb-item>
       <el-breadcrumb-item>捐赠详情</el-breadcrumb-item>
     </el-breadcrumb>
     <el-table :data="donaList" style="width: 100%" :default-sort="{prop: 'date', order: 'descending'}">
