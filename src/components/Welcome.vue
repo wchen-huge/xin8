@@ -89,9 +89,9 @@ import jsonp from 'jsonp'
 const option = {
   title: {
     text: '疫情地图',
-    link: 'https://baidu.com',
+    link: 'https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_aladin_banner#tab4',
     subtext: '疫情地图',
-    sublink: 'https://baidu.com'
+    sublink: 'https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_aladin_banner#tab4'
   },
   series: [
     {
@@ -103,7 +103,7 @@ const option = {
         color: '#333',
         fontSize: 10
       },
-      roam: true, // 控制地图放大缩小
+      roam: true,
       zoom: 1.2, // 控制地图的放大缩小
       data: [], // 用来展示后台给的数据  {name:xx,value:xxx}
       /*      控制地图板块的颜色和边框 */
