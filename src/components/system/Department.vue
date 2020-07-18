@@ -36,30 +36,11 @@
         </el-row>
         <!-- 表格区域 -->
           <el-table border stripe :data="departmentData" style="width: 100%;margin-top:20px;" height="460">
-            <el-table-column prop="id" type="index" label="ID" width="50"></el-table-column>
-            <el-table-column prop="phone" label="办公电话" width="120"></el-table-column>
-            <el-table-column prop="name" label="部门名" width="120"></el-table-column>
-            <el-table-column prop="ctime" label="创建时间" sortable></el-table-column>
+            <el-table-column prop="id" type="index" label="ID" width="80"></el-table-column>
+            <el-table-column prop="phone" label="办公电话" width="150"></el-table-column>
+            <el-table-column prop="name" label="部门名" width="150"></el-table-column>
             <el-table-column prop="address" label="地址"></el-table-column>
-            <el-table-column label="操作" width="150" align="center">
-              <template slot-scope="scope">
-                <el-button @click="edit(scope.row)" type="primary" size="small" class="el-icon-edit">编辑</el-button>
-              </template>
-            </el-table-column>
           </el-table>
-        <!-- 分页 -->
-        <el-pagination
-          style="margin-top:10px;"
-          background
-          @size-change="handleSizeChange"
-          @current-change="handleCurrentChange"
-          :current-page="this.queryMap.pageNum"
-          :page-sizes="[7, 10, 15, 20]"
-          :page-size="this.queryMap.pageSize"
-          layout="total, sizes, prev, pager, next, jumper"
-          :total="total"
-        ></el-pagination>
-
         <!-- 部门别编辑弹出框 -->
         <el-dialog
           @open="getDeanList"
