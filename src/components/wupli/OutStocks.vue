@@ -28,8 +28,8 @@
                 </el-form-item>
 
                 <el-form-item>
-                    <router-link to="/publishStocks">
-                        <el-button type="success" >发放</el-button>
+                    <router-link to="/allocation">
+                        <el-button type="success">发放</el-button>
                     </router-link>
                 </el-form-item>
             </el-form>
@@ -83,6 +83,9 @@ export default {
     this.getstoList()
   },
   methods: {
+    Issue () {
+      this.$router.push({ path: 'allocation' })
+    },
     openEditUser (userInfo) {
       this.editForm = userInfo
       this.editDialogVisible = true
@@ -111,7 +114,7 @@ export default {
              * 重置查询表单
              */
     reset () {
-      this.queryMap = { pageNum: 1, pageSize: 7, status: 0 }
+      location.reload()
     },
     // 搜索
     search () {
