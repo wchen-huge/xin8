@@ -36,14 +36,7 @@
         </el-row>
         <!-- 表格区域 -->
         <template>
-          <el-table
-            border
-            v-loading="loading"
-            stripe
-            :data="departmentData"
-            style="width: 100%;margin-top:20px;"
-            height="460"
-          >
+          <el-table border stripe :data="departmentData" style="width: 100%;margin-top:20px;" height="460">
             <el-table-column prop="id" type="index" label="ID" width="50"></el-table-column>
             <el-table-column prop="phone" label="办公电话" width="120"></el-table-column>
             <el-table-column prop="name" label="部门名" width="120"></el-table-column>
@@ -56,11 +49,9 @@
                   type="text"
                   size="mini"
                   icon="el-icon-edit"
-                  @click="edit(scope.row.id)"
-                >编辑</el-button>
+                  @click="edit(scope.row.id)">编辑</el-button>
 
-                <el-button
-                  v-hasPermission="'department:delete'"
+                <el-button v-hasPermission="'department:delete'"
                   type="text"
                   size="mini"
                   icon="el-icon-delete"
@@ -92,13 +83,7 @@
           @close="closeEditDialog"
         >
         <span>
-          <el-form
-            :model="editRuleForm"
-            :rules="addRules"
-            ref="editRuleFormRef"
-            label-width="100px"
-            class="demo-ruleForm"
-          >
+          <el-form :model="editRuleForm" :rules="addRules" ref="editRuleFormRef" label-width="100px" class="demo-ruleForm">
             <el-form-item label="部门名称" prop="name">
               <el-input v-model="editRuleForm.name"></el-input>
             </el-form-item>
@@ -153,7 +138,6 @@ export default {
     return {
       btnLoading: false,
       btnDisabled: false,
-      loading: true,
       editDialogVisible: false,
       addDialogVisible: false, // 添加弹框是否显示
       total: 0, // 总共多少条数据
