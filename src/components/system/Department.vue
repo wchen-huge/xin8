@@ -41,21 +41,9 @@
             <el-table-column prop="name" label="部门名" width="120"></el-table-column>
             <el-table-column prop="ctime" label="创建时间" sortable></el-table-column>
             <el-table-column prop="address" label="地址"></el-table-column>
-            <el-table-column label="操作">
+            <el-table-column label="操作" width="150" align="center">
               <template slot-scope="scope">
-                <el-button
-                  v-hasPermission="'department:edit'"
-                  type="text"
-                  size="mini"
-                  icon="el-icon-edit"
-                  @click="edit(scope.row.id)">编辑</el-button>
-
-                <el-button v-hasPermission="'department:delete'"
-                  type="text"
-                  size="mini"
-                  icon="el-icon-delete"
-                  @click="del(scope.row.id)"
-                >删除</el-button>
+                <el-button @click="edit(scope.row)" type="primary" size="small" class="el-icon-edit">编辑</el-button>
               </template>
             </el-table-column>
           </el-table>
@@ -249,7 +237,6 @@ export default {
     async update () {
       this.$refs.editRuleFormRef.validate(async valid => {
         if (!valid) {
-
         } else {
           (this.btnLoading = true); (this.btnDisabled = true)
           const { data: res } = await this.$http.put(
