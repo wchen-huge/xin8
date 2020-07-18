@@ -10,14 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33f5f631-45b3-415d-a96f-c783de0d6c15" name="Default Changelist" comment="王晨提交头像框">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menuInfo/Allocation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menuInfo/Allocation.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menuInfo/Approve.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menuInfo/Approve.vue" afterDir="false" />
+    <list default="true" id="33f5f631-45b3-415d-a96f-c783de0d6c15" name="Default Changelist" comment="王晨页面完成">
       <change beforePath="$PROJECT_DIR$/src/components/menuInfo/FlowTrack.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menuInfo/FlowTrack.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menuInfo/Urge.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menuInfo/Urge.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/system/Department.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/system/Department.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +145,7 @@
       <workItem from="1594959531767" duration="1145000" />
       <workItem from="1594961114868" duration="6045000" />
       <workItem from="1594985989420" duration="2902000" />
-      <workItem from="1595038191210" duration="4329000" />
+      <workItem from="1595038191210" duration="4638000" />
     </task>
     <task id="LOCAL-00001" summary="122">
       <created>1594951455273</created>
@@ -195,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594971052183</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="王晨页面完成">
+      <created>1595042684387</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595042684387</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +280,8 @@
     <MESSAGE value="王晨提交《宋斌》" />
     <MESSAGE value="王晨提交《宋斌/吴鹏力》" />
     <MESSAGE value="王晨提交login登录框" />
-    <option name="LAST_COMMIT_MESSAGE" value="王晨提交login登录框" />
+    <MESSAGE value="王晨页面完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="王晨页面完成" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="259" key="#ESLint" timestamp="1595038930607">
@@ -357,10 +359,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="534" y="65" key="VCS.ChangeListViewerDialog/0.0.1366.738@0.0.1366.738" timestamp="1594949073775" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1594971068013">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1595042706117">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1594971068013" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1595042706117" />
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594949188143">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -369,10 +371,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="558" y="103" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.738@0.0.1366.738" timestamp="1594952555494" />
-    <state x="549" y="244" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594986149399">
+    <state x="549" y="244" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595042642628">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="549" y="244" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1594986149399" />
+    <state x="549" y="244" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1595042642628" />
     <state x="100" y="100" width="1166" height="568" key="dock-window-1" timestamp="1594205683698">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
