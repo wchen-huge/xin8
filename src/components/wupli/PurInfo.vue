@@ -10,7 +10,6 @@
       <!-- 卡片区域 -->
       <el-card>
         <!-- 搜索部分 -->
-        <el-form :inline="true" :model="queryInfo" class="demo-form-inline">
           <el-row :gutter="20">
             <el-col :span="8">
               <el-input placeholder="请输入物资单号" v-model="queryInfo.purNumber">
@@ -21,7 +20,6 @@
               <el-button type="primary" icon="el-icon-circle-plus-outline" @click="addDialogVisible=true">添加入库</el-button>
             </el-col>
           </el-row>
-        </el-form>
         <template>
           <el-table :data="getpurList" stripe style="width: 100%">
             <el-table-column prop="purNumber" label="入库单号"></el-table-column>
@@ -36,13 +34,7 @@
             <el-table-column prop="data" label="申请日期"></el-table-column>
             <el-table-column prop="status" label="审批状态"></el-table-column>
             <el-table-column prop="buyer" label="采购员"></el-table-column>
-            <el-table-column prop="remarks" label="备注"></el-table-column>
             <el-table-column prop="classification" label="分类"></el-table-column>
-            <el-table-column fixed="right" label="操作" width="180">
-              <template slot-scope="scope">
-                <el-button type="danger" size="small" class="el-icon-delete" @click="delUserById(scope.row.id)"></el-button>
-              </template>
-            </el-table-column>
           </el-table>
         </template>
         <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange"
@@ -171,8 +163,7 @@ export default {
   },
   data () {
     return {
-      queryMap: { pageNum: 1, pageSize: 5, status: 0 },
-      getpurList: [{}],
+      getpurList: [],
       queryInfo: {
         purNumber: '',
         page: 1,

@@ -18,39 +18,23 @@
           </el-row>-->
         <!--搜索部分-->
             <el-form :inline="true" :model="queryMap" class="demo-form-inline">
-                <el-form-item label="发放单号">
-                    <el-input v-model="queryMap.outNumber" placeholder="发放单号"></el-input>
-                </el-form-item>
-
-                <el-form-item>
-                    <el-button type="primary" @click="search">查询</el-button>
-                    <el-button >重置</el-button>
-                </el-form-item>
 
                 <el-form-item>
                     <router-link to="/allocation">
-                        <el-button type="success">发放</el-button>
+                        <el-button type="success">物资发放</el-button>
                     </router-link>
                 </el-form-item>
             </el-form>
 <!--数据表格-->
           <template>
             <el-table :data="getstockList" stripe style="width: 100%">
-              <el-table-column prop="id" type="index" label="ID"></el-table-column>
               <el-table-column prop="outNumber" label="出库单号"></el-table-column>
               <el-table-column prop="supName" label="物资名称"></el-table-column>
               <el-table-column prop="outQuantity" label="出库数量"></el-table-column>
               <el-table-column prop="unit" label="单位"></el-table-column>
               <el-table-column prop="speModel" label="规格型号"></el-table-column>
               <el-table-column prop="outAddress" label="物资去向地址"></el-table-column>
-              <el-table-column prop="createTime" label="出库时间"></el-table-column>
               <el-table-column prop="remarks" label="备注"></el-table-column>
-              <el-table-column fixed="right" label="操作" width="180">
-                <template slot-scope="scope">
-                  <el-button @click="openEditUser(scope.row)" type="primary" size="small" class="el-icon-edit"></el-button>
-                  <el-button type="danger" size="small" class="el-icon-delete" @click="delUserById(scope.row.id)"></el-button>
-                </template>
-              </el-table-column>
             </el-table>
           </template>
           <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange"

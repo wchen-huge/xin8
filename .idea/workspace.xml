@@ -6,11 +6,36 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33f5f631-45b3-415d-a96f-c783de0d6c15" name="Default Changelist" comment="王晨前台部门修改2">
+    <list default="true" id="d8b7858c-0a7f-43fb-8079-7f312e0c03fc" name="Default Changelist" comment="吴鹏力修改前台">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/wupli/MateCategorys.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wupli/MateCategorys.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/wupli/OutStocks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wupli/OutStocks.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/wupli/PurInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wupli/PurInfo.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,15 +91,15 @@
     <property name="ts.external.directory.path" value="D:\Configuration file\JetBrains\IntelliJ IDEA 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\xin8\xin8\src\components\songbin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\xin8\xin8\src\assets" />
       <recent name="E:\xin8\xin8\src\components\wupli" />
       <recent name="E:\xin8\xin8\src\components\system" />
       <recent name="E:\xin8\xin8\src\components" />
       <recent name="E:\xin8\xin8\src\utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\xin8\xin8\src\components\songbin" />
     </key>
   </component>
   <component name="RunManager">
@@ -316,10 +341,11 @@
     </state>
     <state x="283" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1594950146455" />
     <state x="298" y="0" key="CommitChangelistDialog2/0.0.1440.920@0.0.1440.920" timestamp="1594973267233" />
-    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1595058911815">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="129" y="130" width="1662" height="781" key="DiffContextDialog" timestamp="1595173394466">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1595058911815" />
+    <state x="129" y="130" width="1662" height="781" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595173394466" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1594960386038">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -333,33 +359,33 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="636" y="230" width="256" height="297" key="Github.ShareDialog/0.0.1366.738@0.0.1366.738" timestamp="1594956975632" />
-    <state width="1395" height="301" key="GridCell.Tab.0.bottom" timestamp="1595172893871">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1323" height="126" key="GridCell.Tab.0.bottom" timestamp="1595065178798">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1322" height="197" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593855446983" />
     <state width="1323" height="126" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1595065178798" />
-    <state width="1395" height="301" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1595172893871" />
+    <state width="1395" height="327" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1595052416790" />
     <state width="1867" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595051823142" />
-    <state width="1395" height="301" key="GridCell.Tab.0.center" timestamp="1595172893871">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1323" height="126" key="GridCell.Tab.0.center" timestamp="1595065178798">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1322" height="197" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593855446983" />
     <state width="1323" height="126" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1595065178798" />
-    <state width="1395" height="301" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1595172893871" />
+    <state width="1395" height="327" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1595052416789" />
     <state width="1867" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595051823141" />
-    <state width="1395" height="301" key="GridCell.Tab.0.left" timestamp="1595172893871">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1323" height="126" key="GridCell.Tab.0.left" timestamp="1595065178798">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1322" height="197" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593855446983" />
     <state width="1323" height="126" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1595065178798" />
-    <state width="1395" height="301" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1595172893871" />
+    <state width="1395" height="327" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1595052416789" />
     <state width="1867" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595051823141" />
-    <state width="1395" height="301" key="GridCell.Tab.0.right" timestamp="1595172893871">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1323" height="126" key="GridCell.Tab.0.right" timestamp="1595065178798">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1322" height="197" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593855446983" />
     <state width="1323" height="126" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1595065178798" />
-    <state width="1395" height="301" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1595172893871" />
+    <state width="1395" height="327" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1595052416789" />
     <state width="1867" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595051823142" />
     <state x="263" y="103" key="IDE.errors.dialog" timestamp="1594776552226">
       <screen x="0" y="0" width="1366" height="738" />

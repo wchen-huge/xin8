@@ -15,8 +15,8 @@
         </el-row>
         <template>
           <el-table :data="getMateList" stripe style="width: 100%">
-            <el-table-column prop="id" type="index" label="分类编号" width="200"></el-table-column>
-            <el-table-column prop="supName" label="分类名称" width="300"></el-table-column>
+            <el-table-column prop="id" type="index" label="分类编号" width="600"></el-table-column>
+            <el-table-column prop="supName" label="分类名称"></el-table-column>
             <el-table-column fixed="right" label="操作" width="280">
               <template slot-scope="scope">
                 <el-button type="danger" size="small" class="el-icon-delete" @click="delUserById(scope.row.id)">删除分类</el-button>
