@@ -36,9 +36,8 @@
         </el-row>
         <!-- 表格区域 -->
           <el-table border stripe :data="departmentData" style="width: 100%;margin-top:20px;" >
-            <el-table-column prop="id" type="index" label="ID" width="80"></el-table-column>
-            <el-table-column prop="phone" label="办公电话" width="150"></el-table-column>
             <el-table-column prop="name" label="部门名" width="150"></el-table-column>
+            <el-table-column prop="phone" label="办公电话" width="150"></el-table-column>
             <el-table-column prop="address" label="地址"></el-table-column>
           </el-table>
         <!-- 部门别编辑弹出框 -->
