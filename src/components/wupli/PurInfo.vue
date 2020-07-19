@@ -123,7 +123,7 @@ export default {
       this.queryInfo.page = val
       this.getsortList()
     },
-    async addMate () {
+    addMate () {
       this.$refs.ruleFormAdd.validate(async (valid) => {
         if (valid === true) {
           const { data: res } = await this.$http.post('wpl/purinfo', this.addForm)
