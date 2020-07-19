@@ -10,6 +10,7 @@
       <!-- 卡片区域 -->
       <el-card>
         <!-- 搜索部分 -->
+        <el-form :inline="true" :model="queryInfo" class="demo-form-inline">
           <el-row :gutter="20">
             <el-col :span="8">
               <el-input placeholder="请输入物资单号" v-model="queryInfo.purNumber">
@@ -20,6 +21,7 @@
               <el-button type="primary" icon="el-icon-circle-plus-outline" @click="addDialogVisible=true">添加入库</el-button>
             </el-col>
           </el-row>
+        </el-form>
         <template>
           <el-table :data="getpurList" stripe style="width: 100%">
             <el-table-column prop="purNumber" label="入库单号"></el-table-column>
@@ -163,7 +165,8 @@ export default {
   },
   data () {
     return {
-      getpurList: [],
+      queryMap: { pageNum: 1, pageSize: 5, status: 0 },
+      getpurList: [{}],
       queryInfo: {
         purNumber: '',
         page: 1,

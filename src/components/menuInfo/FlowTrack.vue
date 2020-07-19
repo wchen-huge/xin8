@@ -19,7 +19,6 @@
       <!--数据表格-->
       <template>
         <el-table :data="getstockList" stripe style="width: 100%">
-          <el-table-column prop="id" type="index" label="ID"></el-table-column>
           <el-table-column prop="outNumber" label="出库单号"></el-table-column>
           <el-table-column prop="supName" label="物资名称"></el-table-column>
           <el-table-column prop="outQuantity" label="出库数量"></el-table-column>
