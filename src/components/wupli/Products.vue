@@ -15,13 +15,9 @@
             <el-button slot="append" icon="el-icon-search" @click="getproductList">查询</el-button>
           </el-input>
         </el-col>
-        <el-col :span="4">
-          <el-button type="primary" @click="addDialogVisible=true">新增</el-button>
-        </el-col>
       </el-row>
       <template>
         <el-table :data="getInveList" stripe style="width: 100%">
-          <el-table-column prop="id" type="index" label="ID"></el-table-column>
           <el-table-column prop="supName" label="物资名称" width="180"></el-table-column>
           <el-table-column prop="speModel" label="物资规格" width="100"></el-table-column>
           <el-table-column prop="unit" label="单位" width="180"></el-table-column>
@@ -29,13 +25,6 @@
           <el-table-column prop="remarks" label="备注"></el-table-column>
           <el-table-column prop="status" label="状态"></el-table-column>
           <el-table-column prop="sort" label="分类"></el-table-column>
-          <el-table-column prop="createTime" label="创建时间"></el-table-column>
-          <el-table-column fixed="right" label="操作" width="180">
-            <template slot-scope="scope">
-              <el-button @click="openEditUser(scope.row)" type="primary" size="small" class="el-icon-edit"></el-button>
-              <el-button type="danger" size="small" class="el-icon-delete" @click="delUserById(scope.row.id)"></el-button>
-            </template>
-          </el-table-column>
         </el-table>
       </template>
       <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange"
@@ -45,71 +34,6 @@
                      :total="total">
       </el-pagination>
     </el-card>
-    <el-dialog title="新增物资信息" :visible.sync="addDialogVisible" width="50%" @close="closeAdd">
-      <el-form :model="addForm" :rules="rulesAdd" ref="ruleFormAdd" label-width="100px">
-        <el-form-item label="物资名称" prop="supName">
-          <el-input v-model="addForm.supName"></el-input>
-        </el-form-item>
-        <el-form-item label="物资规格" prop="speModel">
-          <el-input v-model="addForm.speModel"></el-input>
-        </el-form-item>
-        <el-form-item label="单位" prop="unit">
-          <el-input v-model="addForm.unit"></el-input>
-        </el-form-item>
-        <el-form-item label="库存数量" prop="stoQuantity">
-          <el-input v-model="addForm.stoQuantity"></el-input>
-        </el-form-item>
-        <el-form-item label="备注" prop="remarks">
-          <el-input v-model="addForm.remarks"></el-input>
-        </el-form-item>
-        <el-form-item label="状态" prop="status">
-        <el-input v-model="addForm.status"></el-input>
-      </el-form-item>
-        <el-form-item label="分类" prop="sort">
-        <el-input v-model="addForm.sort"></el-input>
-      </el-form-item>
-        <el-form-item label="创建时间" prop="createTime">
-          <el-date-picker v-model="addForm.createTime" type="date" placeholder="选择日期">
-          </el-date-picker>
-        </el-form-item>
-      </el-form>
-      <span slot="footer" class="dialog-footer">
-    <el-button @click="addDialogVisible = false">取 消</el-button>
-    <el-button type="primary" @click="addInve">确 定</el-button>
-  </span>
-    </el-dialog>
-    <el-dialog title="修改物资信息" :visible.sync="editDialogVisible" width="50%" @close="closeEdit">
-      <el-form :model="editForm" :rules="rulesAdd" ref="ruleFormEdit" label-width="100px">
-        <el-form-item label="物资名称" prop="supName">
-          <el-input v-model="editForm.supName"></el-input>
-        </el-form-item>
-        <el-form-item label="物资规格" prop="speModel">
-          <el-input v-model="editForm.speModel"></el-input>
-        </el-form-item>
-        <el-form-item label="单位" prop="unit">
-          <el-input v-model="editForm.unit"></el-input>
-        </el-form-item>
-        <el-form-item label="库存数量" prop="stoQuantity">
-          <el-input v-model="editForm.stoQuantity"></el-input>
-        </el-form-item>
-        <el-form-item label="备注" prop="remarks">
-          <el-input v-model="editForm.remarks"></el-input>
-        </el-form-item>
-        <el-form-item label="状态" prop="status">
-          <el-input v-model="editForm.status"></el-input>
-        </el-form-item>
-        <el-form-item label="分类" prop="sort">
-          <el-input v-model="editForm.sort"></el-input>
-        </el-form-item>
-        <el-form-item label="创建时间" prop="createTime">
-          <el-input v-model="editForm.createTime"></el-input>
-        </el-form-item>
-      </el-form>
-      <span slot="footer" class="dialog-footer">
-    <el-button @click="editDialogVisible = false">取 消</el-button>
-    <el-button type="primary" @click="editUser">确 定</el-button>
-  </span>
-    </el-dialog>
   </div>
 </template>
 

@@ -10,27 +10,20 @@
       <!-- 卡片区域 -->
       <el-card>
         <!-- 搜索部分 -->
-        <el-form :inline="true" :model="queryMap" class="demo-form-inline">
-          <el-form-item>
-            <el-input clearable @clear="search" v-model="queryMap.purNumber" placeholder="请输入入库单查询" @keyup.enter.native="search"
-                      class="input-with-select">
-            </el-input>
-          </el-form-item>
-          <el-form-item>
-            <el-button type="primary" icon="el-icon-search" @click="getpurinfoList">查询</el-button>
-          </el-form-item>
-          <el-form-item>
-            <el-button icon="el-icon-refresh" type="warning" @click="clearTime">重置</el-button>
-          </el-form-item>
-          <el-form-item>
-            <el-col :span="4">
-              <el-button type="primary" icon="el-icon-plus" @click="addDialogVisible=true">入库</el-button>
+        <el-form :inline="true" :model="queryInfo" class="demo-form-inline">
+          <el-row :gutter="20">
+            <el-col :span="8">
+              <el-input placeholder="请输入物资单号" v-model="queryInfo.purNumber">
+                <el-button slot="append" icon="el-icon-search" @click="getpurinfoList">查询</el-button>
+              </el-input>
             </el-col>
-          </el-form-item>
+            <el-col :span="4">
+              <el-button type="primary" icon="el-icon-circle-plus-outline" @click="addDialogVisible=true">添加入库</el-button>
+            </el-col>
+          </el-row>
         </el-form>
         <template>
           <el-table :data="getpurList" stripe style="width: 100%">
-            <el-table-column prop="id" type="index" label="ID"></el-table-column>
             <el-table-column prop="purNumber" label="入库单号"></el-table-column>
             <el-table-column prop="supName" label="物资名称"></el-table-column>
             <el-table-column prop="speModel" label="规格型号"></el-table-column>
@@ -174,16 +167,6 @@ export default {
       }
       this.total = res.data.total
       this.getpurList = res.data.result
-    },
-    clearTime () {
-      location.reload()
-    },
-    /**
-     * 查询入库单
-     */
-    search () {
-      this.queryMap.pageNum = 1
-      this.getpurinfoList()
     }
   },
   data () {

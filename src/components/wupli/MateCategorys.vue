@@ -10,19 +10,16 @@
       <el-card class="box-card">
         <el-row :gutter="20">
           <el-col :span="4">
-            <el-button type="primary" icon="el-icon-circle-plus-outline" @click="addDialogVisible=true">添加</el-button>
+            <el-button type="primary" icon="el-icon-circle-plus-outline" @click="addDialogVisible=true">添加分类</el-button>
           </el-col>
         </el-row>
         <template>
           <el-table :data="getMateList" stripe style="width: 100%">
-            <el-table-column prop="id" type="index" label="ID" width="200"></el-table-column>
+            <el-table-column prop="id" type="index" label="分类编号" width="200"></el-table-column>
             <el-table-column prop="supName" label="分类名称" width="300"></el-table-column>
-            <el-table-column prop="createTime" label="创建时间" width="300"></el-table-column>
-            <el-table-column prop="modifiedTime" label="修改时间" width="300"></el-table-column>
             <el-table-column fixed="right" label="操作" width="280">
               <template slot-scope="scope">
-                <el-button @click="openEditUser(scope.row)" type="primary" size="small" class="el-icon-edit"></el-button>
-                <el-button type="danger" size="small" class="el-icon-delete" @click="delUserById(scope.row.id)"></el-button>
+                <el-button type="danger" size="small" class="el-icon-delete" @click="delUserById(scope.row.id)">删除分类</el-button>
               </template>
             </el-table-column>
           </el-table>
@@ -49,17 +46,6 @@
         <span slot="footer" class="dialog-footer">
     <el-button @click="addDialogVisible = false">取 消</el-button>
     <el-button type="primary" @click="addMate">确 定</el-button>
-  </span>
-      </el-dialog>
-      <el-dialog title="修改物资分类" :visible.sync="editDialogVisible" width="50%" @close="closeEdit">
-        <el-form :model="editForm" :rules="rulesAdd" ref="ruleFormEdit" label-width="100px">
-          <el-form-item label="分类名称" prop="supName">
-            <el-input v-model="editForm.supName"></el-input>
-          </el-form-item>
-        </el-form>
-        <span slot="footer" class="dialog-footer">
-    <el-button @click="editDialogVisible = false">取 消</el-button>
-    <el-button type="primary" @click="editUser">确 定</el-button>
   </span>
       </el-dialog>
     </div>
